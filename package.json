@@ -1,0 +1,23 @@
+{
+  "name": "smacss-note",
+  "version": "0.1.0",
+  "description": "Note of SMACSS course from Front-end Master",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Stan-Feng/smacss-note.git"
+  },
+  "keywords": [
+    "CSS",
+    "SMACSS"
+  ],
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Stan-Feng/smacss-note/issues"
+  },
+  "homepage": "https://github.com/Stan-Feng/smacss-note#readme"
+}
