@@ -19,5 +19,8 @@
   "bugs": {
     "url": "https://github.com/Stan-Feng/smacss-note/issues"
   },
-  "homepage": "https://github.com/Stan-Feng/smacss-note#readme"
+  "homepage": "https://github.com/Stan-Feng/smacss-note#readme",
+  "devDependencies": {
+    "node-sass": "^3.4.0"
+  }
 }
