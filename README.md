@@ -34,3 +34,28 @@ Learning Note of SMACSS (Scalable and Modular Architecture for CSS)
   - Isolating code allows for easier reuse, testing and debugging
   - Categorizing reveals patterns; easier to identify when things break the pattern
 
+#### Naming Convention
+  - There are only two hard things in Computer Science: cache invalidation and naming things
+  - Base: Just selectors
+  - Layout: layout-content. layout-header, layout-something
+  - Use Class over ID
+    - Specificity is dangerous
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -12,30 +12,22 @@
  */
 
 /* Site settings */
-// @import "site-settings";
+@import "site-settings";
 
 /* Vendor */
-//@import "vendor/bootstrap";
-//@import "vendor/foundation";
+// @import "vendor/bootstrap";
+// @import "vendor/foundation";
 
 /* Override */
-//@import "vendor-override/bootsrap";
-//@import "vendor-override/foundation";
+// @import "vendor-override/bootsrap";
+// @import "vendor-override/foundation";
 
 /* Base */
-// @import "base";
+@import "base";
 
 /* Layouts */
-// @import "layout/constrained";
+@import "layout/constrained";
 
 /* Modules */
-// @import "modules/box";
+@import "modules/box";
 
-body { margin: 0; padding: 0; }
-body { background-color: #333; }
-
-.layout-highlight { background-color: #ccc; }
-.layout-featured-highlight { background-color: #eee; }
-.layout-constrained { width: 760px; }
-.layout-content {}
-.layout-sidebar {}
