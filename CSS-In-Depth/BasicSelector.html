@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Basic Selector</title>
+
+    <link rel="stylesheet" href="/css/base.css" media="screen" title="no title" charset="utf-8">
+    <link rel="stylesheet" href="/css/selector.css" media="screen" title="no title" charset="utf-8">
+  </head>
+  <body>
+    <section>
+      <h2>Selectors</h2>
+      <h3>Basic and Relational Selectors</h4>
+      <p class = "description">
+        Purple stands for "ol > li" <br>
+        Green stands for "ol li" <br>
+        Red stands for "li.myClass" <br>
+        Orange stands for "li.myClass + li" <br>
+        Blue stands for "li.myClass ~ blue" <br>
+      </p>
+      <ol>
+        <li>item 1</li>
+        <li>item 2</li>
+        <li>
+          <span>item 3</span>
+          <ul>
+            <li>item a</li>
+            <li>item b</li>
+            <li>item c</li>
+          </ul>
+        </li>
+        <li class = 'myClass'>item 4</li>
+        <li>item 5</li>
+        <li>item 6</li>
+        <li>item 7</li>
+      </ol>
+    </section>
+  </body>
+</html>

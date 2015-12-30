@@ -1,0 +1,17 @@
+body {
+  font-family: Monaco;
+}
+
+a {
+  text-decoration: none;
+}
+
+section {
+  margin: 3%
+}
+
+.description {
+  margin-left: 1%;
+  font-family: times;
+  color: deepskyblue;
+}
