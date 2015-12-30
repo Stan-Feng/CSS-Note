@@ -1,0 +1,17 @@
+li[title="CSS Attribute Selectors"] {
+  color: purple;
+  font-weight: bold;
+}
+
+a[href^=http] {
+  font-weight: bold;
+  font-family: cursive;
+  color: red;
+}
+
+a[href$=pdf] {
+  font-style: italic;
+  color: orange;
+  font-family: cursive;
+}
+
