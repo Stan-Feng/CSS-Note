@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>UI Selectors</title>
+  <link rel="stylesheet" href="/css/base.css" media="screen" title="no title" charset="utf-8">
+  <link rel="stylesheet" href="/css/UISelector.css" media="screen" title="no title" charset="utf-8">
+</head>
+
+<body>
+  <section>
+    <h2>UI Selectors</h2>
+    <p class="description">
+      Select checkbox there will be style changed <br>
+      Orange background color stands for the input is required <br>
+      Red border stands for invalid input while green input stands for valid input <br>
+      Yellow background stands for optional input
+    </p>
+    <ol>
+      <li>
+        <input type="checkbox" id="test1ck" />
+        <label for="test1ck">Check and uncheck me</label>
+      </li>
+      <li>
+        <input type="checkbox" id="test2ck" checked/>
+        <label for="test2ck">Check and uncheck me too</label>
+      </li>
+      <li>
+        <input type="number" max=7 min=5 required>
+        <label for="numberInput"></label>
+      </li>
+      <li>
+      <input type="color" id="colorInput" value="#eeeeee">
+      <label for="colorInput">Hexidecimal Color</label>
+    </li>
+    </ol>
+  </section>
+
+  <section>
+    <h2>Structual UI pseudo-classes</h2>
+    <p class="description">
+      Red stands for tr:nth-of-type(odd) td:nth-of-type(odd) <br>
+      Gray stands for tr:nth-of-type(even) td:nth-of-type(even) <br>
+      Orangestands for tr:not(:nth-child(1)) <br>
+    </p>
+    <table>
+      <tr>
+        <td>cell</td>
+        <td>cell</td>
+        <td>cell</td>
+        <td>cell</td>
+        <td>cell</td>
+      </tr>
+      <tr>
+        <td>cell</td>
+        <td>cell</td>
+        <td>cell</td>
+        <td>cell</td>
+        <td>cell</td>
+      </tr>
+      <tr>
+        <td>cell</td>
+        <td>cell</td>
+        <td>cell</td>
+        <td>cell</td>
+        <td>cell</td>
+      </tr>
+      <tr>
+        <td>cell</td>
+        <td>cell</td>
+        <td>cell</td>
+        <td>cell</td>
+        <td>cell</td>
+      </tr>
+    </table>
+  </section>
+
+</body>
+
+</html>

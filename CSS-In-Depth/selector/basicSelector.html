@@ -5,12 +5,19 @@
     <title>Basic Selector</title>
 
     <link rel="stylesheet" href="/css/base.css" media="screen" title="no title" charset="utf-8">
-    <link rel="stylesheet" href="/css/selector.css" media="screen" title="no title" charset="utf-8">
+    <link rel="stylesheet" href="/css/basicSelector.css" media="screen" title="no title" charset="utf-8">
+    <style contenteditable media="screen">
+      ol li { color: green; }
+      ol > li { color : purple; }
+      li { color: yellow; }
+      li.myClass { color: red; }
+      li.myClass ~ li { color: blue; }
+      li.myClass + li { color: orange; }
+    </style>
   </head>
   <body>
     <section>
-      <h2>Selectors</h2>
-      <h3>Basic and Relational Selectors</h4>
+      <h2>Basic and Relational Selectors</h2>
       <p class = "description">
         Purple stands for "ol > li" <br>
         Green stands for "ol li" <br>

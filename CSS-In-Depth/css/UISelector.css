@@ -1,0 +1,41 @@
+input[type=checkbox]:checked + label {
+  color: red;
+  font-family: cursive;
+  font-weight: bold;
+}
+
+input:valid {
+  border: 2px solid green;
+}
+
+input:invalid {
+  border: 2px solid red;
+}
+
+input:required {
+  background-color: orange;
+}
+
+input:optional {
+  background-color: yellow;
+}
+
+tr:nth-of-type(odd) td:nth-of-type(odd) {
+  background-color: #900; color: #fff;
+}
+tr:nth-of-type(even) td:nth-of-type(even) {
+  background-color: #aaa; color: #fff;
+}
+
+tr:not(:nth-child(1)) {
+  background-color: orange;
+  font-weight: bold;
+}
+
+section:not(:target) > h2 {
+  color: black;
+}
+
+section:target > a {
+  color: purple;
+}
