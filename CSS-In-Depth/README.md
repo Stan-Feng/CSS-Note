@@ -54,5 +54,5 @@ tr:not(:nth-child(1)) {
     - :hover:
     - :active:
     - :focus
-  - Pseudo Elements
-    - ::
+  - Pseudo-class **select** elements already exist.
+  - Pseudo-elements create "faux" elements you can style

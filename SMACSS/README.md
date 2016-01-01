@@ -1,6 +1,3 @@
-Learning Note of SMACSS (Scalable and Modular Architecture for CSS)
-====================================================================
-
 ## SMACSS is
   - Categorization
   - Naming Convention
