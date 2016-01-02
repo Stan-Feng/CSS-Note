@@ -3,8 +3,93 @@
   <head>
     <meta charset="utf-8">
     <title>Pseudo Selectors</title>
+    <link rel="stylesheet" href="/css/base.css" media="screen" title="no title" charset="utf-8">
+    <link rel="stylesheet" href="/css/pseudoSelector.css" media="screen" title="no title" charset="utf-8">
+    <style contenteditable>
+      tr:nth-of-type(odd) td:nth-of-type(odd) {
+        background-color: #900; color: #fff;
+      }
+      tr:nth-of-type(even) td:nth-of-type(even) {
+        background-color: #aaa; color: #fff;
+      }
+
+      tr:not(:nth-child(1)) {
+        background-color: orange;
+        font-weight: bold;
+      }
+
+      section:not(:target) > h2 {
+        color: black;
+      }
+
+      section:target > a {
+        color: purple;
+      }
+
+      #pseudoElement > p:first-of-type::first-letter {
+        position: relative;
+        top: 8px;
+        float: left;
+        font-size: 3em;
+        line-height: 1;
+        color: #990000;
+        padding: 0 4px 2px 0;
+        font-weight: bold;
+      }
+    </style>
   </head>
+
   <body>
+    <section>
+      <h2>Structual Pseudo-classes</h2>
+      <p class="description">
+        Red stands for tr:nth-of-type(odd) td:nth-of-type(odd) <br>
+        Gray stands for tr:nth-of-type(even) td:nth-of-type(even) <br>
+        Orangestands for tr:not(:nth-child(1)) <br>
+      </p>
+      <table>
+        <tr>
+          <td>cell</td>
+          <td>cell</td>
+          <td>cell</td>
+          <td>cell</td>
+          <td>cell</td>
+        </tr>
+        <tr>
+          <td>cell</td>
+          <td>cell</td>
+          <td>cell</td>
+          <td>cell</td>
+          <td>cell</td>
+        </tr>
+        <tr>
+          <td>cell</td>
+          <td>cell</td>
+          <td>cell</td>
+          <td>cell</td>
+          <td>cell</td>
+        </tr>
+        <tr>
+          <td>cell</td>
+          <td>cell</td>
+          <td>cell</td>
+          <td>cell</td>
+          <td>cell</td>
+        </tr>
+      </table>
+    </section>
+
+
+    <section id='pseudoElement'>
+      <h2>Pseudo Elements</h2>
+      <p>
+        You can even pretty drop-caps with ::first-letter, but make sure you apply
+        it to p:first-of-type so your site not too ugly.
+      </p>
+      <p>
+        This is the second paragraph.
+      </p>
+    </section>
 
   </body>
 </html>

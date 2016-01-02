@@ -19,34 +19,3 @@ input:required {
 input:optional {
   background-color: yellow;
 }
-
-tr:nth-of-type(odd) td:nth-of-type(odd) {
-  background-color: #900; color: #fff;
-}
-tr:nth-of-type(even) td:nth-of-type(even) {
-  background-color: #aaa; color: #fff;
-}
-
-tr:not(:nth-child(1)) {
-  background-color: orange;
-  font-weight: bold;
-}
-
-section:not(:target) > h2 {
-  color: black;
-}
-
-section:target > a {
-  color: purple;
-}
-
-#pseudoElement > p:first-of-type::first-letter {
-  position: relative;
-  top: 8px;
-  float: left;
-  font-size: 3em;
-  line-height: 1;
-  color: #990000;
-  padding: 0 4px 2px 0;
-  font-weight: bold;
-}

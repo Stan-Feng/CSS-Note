@@ -36,7 +36,7 @@ input[type=checkbox]:checked + label {
   font-weight: bold;
 }
 
-Structural UI Selector
+  - Structural UI Selector
 tr:nth-of-type(odd) td:nth-of-type(odd) {
   background-color: #900; color: #fff;
 }
@@ -44,7 +44,7 @@ tr:nth-of-type(even) td:nth-of-type(even) {
   background-color: #aaa; color: #fff;
 }
 
-Negation Selector
+  - Negation Selector
 tr:not(:nth-child(1)) {
   background-color: orange;
   font-weight: bold;
