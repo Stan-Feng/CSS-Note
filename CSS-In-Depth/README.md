@@ -56,3 +56,57 @@ tr:not(:nth-child(1)) {
     - :focus
   - Pseudo-class **select** elements already exist.
   - Pseudo-elements create "faux" elements you can style
+
+
+## Generated Content
+  - Generated Content is created by CSS, which is **NOT** a part of DOM.
+```css
+p::before {
+  content: 'bananas';
+  font-weight: bold;
+}
+p::after {
+  content: 'apples';
+  font-weight: bold;
+}
+```
+  - [CSS Tricks of Generated Content]( http://css-tricks.com/examples/ShapesOfCSS/)
+  - Generated Content can be manipulated in CSS, JavaScript can't.
+  - Values for content: none, normal, string, image, counter
+  - Usually can be used
+    - as background image sprite
+    - as notification
+    ```CSS
+    a[href^=http]:hover {
+      position: relative;
+    }
+    a[href^=http]:hover::after {
+      content: attr(href);
+      position: absolute;
+      top: 1em;
+      left: 0;
+      background-color: black;
+      color: white;
+      line-height: 1px;
+    }
+    ```
+    - as triangles
+    ```CSS
+    .triangle {
+      border-radius: 10px;
+      position: relative;
+      padding: 20px;
+      background-color: red;
+      white;
+    }
+    .triangle::after {
+      position: absolute;
+      content: '';
+      width: 0;
+      height: 0;
+      border: 20px solid transparent;
+      border-top-color: red;
+      bottom: -39px;
+      left: 20px;
+    }
+    ```

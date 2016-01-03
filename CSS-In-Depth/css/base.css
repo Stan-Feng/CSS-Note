@@ -4,6 +4,17 @@ body {
 head, style {
   display: block;
 }
+h3 {
+  font-weight: bold;
+  font-family: cursive;
+}
+a {
+  text-decoration: none;
+}
+section {
+  margin: 3%
+}
+
 [contenteditable] {
   -webkit-user-modify: read-write-plaintext-only;
 }
@@ -20,12 +31,6 @@ style:first-of-type {
   overflow: auto;
 }
 
-a {
-  text-decoration: none;
-}
-section {
-  margin: 3%
-}
 .description {
   margin-left: 1%;
   font-family: times;

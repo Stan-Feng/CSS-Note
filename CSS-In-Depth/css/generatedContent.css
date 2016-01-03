@@ -1,0 +1,40 @@
+#examples  p::before {
+  content: 'bananas';
+  font-weight: bold;
+  color: orange;
+}
+#examples  p::after {
+  content: 'apples';
+  font-weight: bold;
+  color: red;
+}
+
+#examples a[href^=http]:hover::after {
+  content: attr(href);
+  position: absolute;
+  background-color: gray;
+  color: white;
+  line-height: 2em;
+  padding: 3px;
+}
+
+.triangle {
+  border-radius: 10px;
+  position: relative;
+  padding: 20px;
+  background-color: red;
+  white;
+}
+.triangle::after {
+  position: absolute;
+  content: '';
+  width: 0;
+  height: 0;
+  border: 20px solid transparent;
+  border-top-color: red;
+  bottom: -39px;
+  left: 20px;
+}
+
+
+
