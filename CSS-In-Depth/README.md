@@ -28,23 +28,26 @@ p[data-attr|= "en"] {} /*<p = data-attr-lang = "en-us"> <p data-attr-lang = "en-
 p[attr^=val] /*Regular Expression*/
 ```  
   - Pseudo Class Selectors
-```css
 UI Attribute Selector
+```css
 input[type=checkbox]:checked + label {
   color: red;
   font-family: cursive;
   font-weight: bold;
 }
+```
 
   - Structural UI Selector
+```css  
 tr:nth-of-type(odd) td:nth-of-type(odd) {
   background-color: #900; color: #fff;
 }
 tr:nth-of-type(even) td:nth-of-type(even) {
   background-color: #aaa; color: #fff;
 }
-
+```
   - Negation Selector
+```css  
 tr:not(:nth-child(1)) {
   background-color: orange;
   font-weight: bold;
@@ -76,7 +79,7 @@ p::after {
   - Usually can be used
     - as background image sprite
     - as notification
-    ```CSS
+    ```css
     a[href^=http]:hover {
       position: relative;
     }
@@ -91,7 +94,7 @@ p::after {
     }
     ```
     - as triangles
-    ```CSS
+    ```css
     .triangle {
       border-radius: 10px;
       position: relative;
